@@ -1,0 +1,1 @@
+export { default as AppStyle } from './App.module.scss';
