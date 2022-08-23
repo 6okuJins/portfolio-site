@@ -1,0 +1,1 @@
+export { ReactComponent as Circle } from './circle.svg';

@@ -1,0 +1,22 @@
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.Title {
+  display: flex;
+  height: 100vh;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  svg {
+    height: 400px;
+    width: 400px;
+    fill: none;
+    stroke: black;
+    
+    stroke-dasharray: 63;
+    stroke-dashoffset: 63;
+    animation: offset 1.5s cubic-bezier(.84,.4,.09,.96) forwards;
+  }
+}
