@@ -1,22 +1,42 @@
 @keyframes offset {
   100% {
     stroke-dashoffset: 0;
+    stroke-dasharray: 1400;
   }
 }
 .Title {
   display: flex;
   height: 100vh;
-  flex-grow: 1;
+  flex: 1 0 auto;
   justify-content: center;
   align-items: center;
   svg {
-    height: 400px;
-    width: 400px;
+    display: flex;
+    flex-grow:1;
+    stroke-width: 0.5%;
+    height: 600px;
+    width: 600px;
     fill: none;
     stroke: black;
-    
-    stroke-dasharray: 63;
-    stroke-dashoffset: 63;
+    // stroke-dasharry circle 498
+    //stroke dasharray rectangle 1400
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation-delay: 10s;
     animation: offset 1.5s cubic-bezier(.84,.4,.09,.96) forwards;
   }
+  
+}
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .Title {
+      svg {
+        overflow: visible;
+        height: 300px;
+        width: 300px;
+        stroke-width: 0.5%;
+      }
+    }
 }
