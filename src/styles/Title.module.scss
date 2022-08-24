@@ -10,20 +10,23 @@
   flex: 1 0 auto;
   justify-content: center;
   align-items: center;
-  svg {
+  #morphingCircle {
     display: flex;
     flex-grow:1;
     stroke-width: 0.5%;
-    height: 600px;
-    width: 600px;
-    fill: none;
-    stroke: black;
+    height: 1000px;
+    width: 1000px;
+    stroke: blue;
     // stroke-dasharry circle 498
     //stroke dasharray rectangle 1400
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
-    animation-delay: 10s;
+    //animation-delay: 10s;
     animation: offset 1.5s cubic-bezier(.84,.4,.09,.96) forwards;
+  }
+  #Dominic {
+    height: 400px;
+    width: 400px;
   }
   
 }
