@@ -1,7 +1,26 @@
-@keyframes offset {
+@keyframes drawCircle {
   100% {
     stroke-dashoffset: 0;
     stroke-dasharray: 1400;
+  }
+}
+@keyframes drawName {
+  100% {
+    stroke-dashoffset: 0;
+
+  }
+}
+@keyframes drawDots {
+//visibility does not tween, do not animate on it
+  100% {
+    stroke: black;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke: #6DD5ED;
+  }
+  40% {
+  stroke-dashoffset: 0;
   }
 }
 .Title {
@@ -22,14 +41,29 @@
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
     //animation-delay: 10s;
-    animation: offset 1.5s cubic-bezier(.84,.4,.09,.96) forwards;
+    animation: drawCircle 1.5s cubic-bezier(.84,.4,.09,.96) forwards;
+    }
+  #Dominic g {
+    path:first-child {
+    stroke-dasharray: 820;
+    stroke-dashoffset: 820;
+    animation: drawName 5s ease-in-out forwards;
+    }
+    circle {
+      stroke: #6DD5ED;
+      stroke-dasharray: 20;
+      stroke-dashoffset: 20;
+      animation: drawDots 3s linear forwards;
+      animation-delay: 5s;
+    }
+    path:last-child {
+      stroke-dasharray: 315;
+      stroke-dashoffset: 315;
+      animation: drawName 5s ease-in-out forwards;
+    }
   }
-  #Dominic {
-    height: 400px;
-    width: 400px;
-  }
-  
 }
+  
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
