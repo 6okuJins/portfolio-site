@@ -4,6 +4,11 @@
     stroke-dasharray: 1400;
   }
 }
+@keyframes eraseRectangle {
+  100% {
+    stroke-dashoffset: 1400;
+  }
+}
 @keyframes drawName {
   100% {
     stroke-dashoffset: 0;
@@ -16,10 +21,11 @@
     stroke: black;
     stroke-dashoffset: 0;
   }
-  50% {
+
+  60% {
     stroke: #6DD5ED;
   }
-  40% {
+  30% {
   stroke-dashoffset: 0;
   }
 }
@@ -29,37 +35,47 @@
   flex: 1 0 auto;
   justify-content: center;
   align-items: center;
+  overflow: visible;
   #morphingCircle {
     display: flex;
     flex-grow:1;
     stroke-width: 0.5%;
-    height: 1000px;
-    width: 1000px;
+    height: 80vh;
+    width: 80vw;
     stroke: blue;
+    transform: translateX(50%);
     // stroke-dasharry circle 498
     //stroke dasharray rectangle 1400
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
     //animation-delay: 10s;
-    animation: drawCircle 1.5s cubic-bezier(.84,.4,.09,.96) forwards;
+    animation: drawCircle 1.5s cubic-bezier(.84,.4,.09,.96) forwards, eraseRectangle 1.5s cubic-bezier(.84,.4,.09,.96) forwards;
+    animation-delay: 0s, 8s;
     }
+  #Dominic {
+    height: 75%;
+    width: 75%;
+    transform: translateX(-50%);
+  }
   #Dominic g {
     path:first-child {
-    stroke-dasharray: 820;
-    stroke-dashoffset: 820;
-    animation: drawName 5s ease-in-out forwards;
+    stroke-dasharray: 830;
+    stroke-dashoffset: 830;
+    animation: drawName 3s ease-in-out forwards;
+    animation-delay: 2.5s;
     }
     circle {
       stroke: #6DD5ED;
       stroke-dasharray: 20;
       stroke-dashoffset: 20;
-      animation: drawDots 3s linear forwards;
-      animation-delay: 5s;
+      animation: drawDots 8s linear forwards;
+      animation-delay: 5.5s;
     }
     path:last-child {
       stroke-dasharray: 315;
       stroke-dashoffset: 315;
-      animation: drawName 5s ease-in-out forwards;
+      animation: drawName 3s ease-in-out forwards;
+      animation-delay: 2.5s;
     }
   }
 }

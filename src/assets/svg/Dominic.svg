@@ -21,23 +21,23 @@
         <linearGradient id="animated-gradient" > 
             
             <stop offset="0%" stop-color="#000000">
-                <animate attributeName="stop-color" values="#C6FFDD; #FBD786; #F7797D, #6DD5ED, #C6FFDD" dur="11s" ></animate>
+                <animate attributeName="stop-color" values="#C6FFDD; #FBD786; #F7797D, #6DD5ED, #C6FFDD" dur="15s" ></animate>
             </stop>
 
             <stop offset="25%" stop-color="#000000">
-                <animate attributeName="stop-color" values="#FBD786; #F7797D; #6DD5ED, #C6FFDD, #FBD786" dur="11s" ></animate>
+                <animate attributeName="stop-color" values="#FBD786; #F7797D; #6DD5ED, #C6FFDD, #FBD786" dur="15s" ></animate>
             </stop>
             
             <stop offset="50%" stop-color="#000000">
-                <animate attributeName="stop-color" values="#F7797D; #6DD5ED; #C6FFDD, #FBD786, #F7797D" dur="11s" ></animate>
+                <animate attributeName="stop-color" values="#F7797D; #6DD5ED; #C6FFDD, #FBD786, #F7797D" dur="15s" ></animate>
             </stop>
             
             <stop offset="75%" stop-color="#000000">
-                <animate attributeName="stop-color" values="#6DD5ED; #C6FFDD; #FBD786, #F7797D, #6DD5ED" dur="11s" ></animate>
+                <animate attributeName="stop-color" values="#6DD5ED; #C6FFDD; #FBD786, #F7797D, #6DD5ED" dur="15s" ></animate>
             </stop>
             
             <stop offset="100%" stop-color="#000000">
-                <animate attributeName="stop-color" values="#C6FFDD; #FBD786; #F7797D, #6DD5ED, #C6FFDD" dur="11s" ></animate>
+                <animate attributeName="stop-color" values="#C6FFDD; #FBD786; #F7797D, #6DD5ED, #C6FFDD" dur="15s" ></animate>
             </stop>
 
         </linearGradient> 
